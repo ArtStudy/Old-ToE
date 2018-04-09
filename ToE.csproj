@@ -291,7 +291,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DeleteExplosion.cs" />
     <Compile Include="Assets\Scripts\ElementsPanel.cs" />
-    <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Game.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

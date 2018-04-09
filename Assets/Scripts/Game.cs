@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour {
+public class Game : MonoBehaviour {
 
     public bool explosionFlag;
 	// Use this for initialization
