@@ -22,7 +22,7 @@ public class Game : MonoBehaviour {
     {
         if (explosionFlag == false)
         {
-            Vector3 pos = new Vector3(0, 0, this.gameObject.transform.position.z+1);
+            Vector3 pos = new Vector3(0, 0, this.gameObject.transform.position.z+0.5f);
             Instantiate(explosion, pos, Quaternion.identity);
             addComponent(0);
             explosionFlag = true;
