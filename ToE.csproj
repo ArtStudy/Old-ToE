@@ -290,6 +290,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DeleteExplosion.cs" />
+    <Compile Include="Assets\Scripts\ElementAnimation.cs" />
     <Compile Include="Assets\Scripts\ElementsPanel.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\StarAnimation.cs" />

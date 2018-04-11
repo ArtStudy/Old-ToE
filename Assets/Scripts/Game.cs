@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Game : MonoBehaviour {
 
-    public bool explosionFlag;
+    private bool explosionFlag = false;
     public GameObject elementsPanel;
-	// Use this for initialization
+    public GameObject[] elements;
+    public int amountOpenedElements=0;
 	void Start () {
-        Vector3 panelPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,0,this.gameObject.transform.position.z));
-        Instantiate(elementsPanel, panelPos, Quaternion.identity);
+
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 
 	}
@@ -25,7 +24,14 @@ public class Game : MonoBehaviour {
         {
             Vector3 pos = new Vector3(0, 0, this.gameObject.transform.position.z+1);
             Instantiate(explosion, pos, Quaternion.identity);
+            addComponent(0);
             explosionFlag = true;
         }
+    }
+    private void addComponent(int number)
+    {
+        Vector3 elementPos = new Vector3(elementsPanel.transform.position.x, 4.5f - amountOpenedElements, 1);
+        amountOpenedElements++;
+        Instantiate(elements[0], elementPos, Quaternion.identity);
     }
 }

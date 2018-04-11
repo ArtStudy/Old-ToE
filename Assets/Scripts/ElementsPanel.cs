@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ElementsPanel : MonoBehaviour {
-    RectTransform rectTransform;
 	// Use this for initialization
 	void Start () {
         /*	for (int i=0;i<10;i++)
@@ -14,20 +13,12 @@ public class ElementsPanel : MonoBehaviour {
                 else
                     Instantiate(elements[0], pos, Quaternion.identity);
             }*/
-        ResizePanel();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         //OnMouseEnter();
 	}
-
-    void ResizePanel()
-    {
-        rectTransform = GetComponent<RectTransform>();
-        Vector3 newScale = new Vector3(1, 1, this.gameObject.transform.position.z);
-        this.transform.localScale = newScale;
-    }
     public GameObject[] elements;
     
 }
