@@ -5,9 +5,11 @@ using UnityEngine;
 public class Game : MonoBehaviour {
 
     public bool explosionFlag;
+    public GameObject elementsPanel;
 	// Use this for initialization
 	void Start () {
-     
+        Vector3 panelPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,0,this.gameObject.transform.position.z));
+        Instantiate(elementsPanel, panelPos, Quaternion.identity);
 	}
 	
 	// Update is called once per frame
@@ -21,7 +23,8 @@ public class Game : MonoBehaviour {
     {
         if (explosionFlag == false)
         {
-            Instantiate(explosion, explosion.transform.position, Quaternion.identity);
+            Vector3 pos = new Vector3(0, 0, this.gameObject.transform.position.z+1);
+            Instantiate(explosion, pos, Quaternion.identity);
             explosionFlag = true;
         }
     }
