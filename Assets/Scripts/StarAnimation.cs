@@ -10,7 +10,6 @@ public class StarAnimation : MonoBehaviour {
     {
         float scale = Random.Range(0.1f, 0.5f);
         this.transform.localScale = new Vector3(scale, scale, scale);
-        delta = Random.Range(0, 10);
         star = GetComponent<SpriteRenderer> ();
         StartCoroutine(lightStar());
         Destroy(gameObject, 60f);
@@ -18,7 +17,7 @@ public class StarAnimation : MonoBehaviour {
     void Update()
     {
         Vector3 topScreen = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        if (transform.position.x > topScreen.x+1 || transform.position.y > topScreen.y+1 || transform.position.x < -topScreen.x-1 || transform.position.y < -topScreen.y-1)
+        if (transform.position.x > topScreen.x+0.3 || transform.position.y > topScreen.y+0.3 || transform.position.x < -topScreen.x-0.3 || transform.position.y < -topScreen.y-0.3)
             Destroy(gameObject);
             transform.position += transform.up * Time.deltaTime * movementSpeed;
 

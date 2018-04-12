@@ -17,7 +17,7 @@ public class StarLight : MonoBehaviour {
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(0, Screen.width), Random.Range(0, Screen.height), Camera.main.farClipPlane/5));
             Instantiate(stars[Random.Range(0, stars.Length)], pos,Quaternion.Euler(0,0,Random.Range(0,360)));
-            yield return new WaitForSeconds(Random.Range(1f,3f));
+            yield return new WaitForSeconds(Random.Range(0.1f,1.0f));
         }
     }
 }

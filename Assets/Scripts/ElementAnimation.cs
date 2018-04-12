@@ -18,7 +18,7 @@ public class ElementAnimation : MonoBehaviour {
     {
         while(element.color.a!=1.0f)
         { 
-            element.color = new Color(element.color.r,element.color.g,element.color.b,element.color.a+0.02f);
+            element.color = new Color(element.color.r,element.color.g,element.color.b,element.color.a+0.01f);
             yield return 0;
         }
     }
