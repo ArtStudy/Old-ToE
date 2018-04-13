@@ -12,7 +12,7 @@ public class ElementAnimation : MonoBehaviour {
     }
     void Update()
     {
-      
+        
     }
     IEnumerator elementAnimation()
     {

@@ -381,7 +381,8 @@ MonoBehaviour:
   elementsIcons:
   - {fileID: 1954264467954186, guid: 5c0a1cbde5602134daefe81b6b902c27, type: 2}
   elements:
-  - {fileID: 1550030425811554, guid: 310f5c33954e51744857a74ab897ae61, type: 2}
+  - {fileID: 1606587542454078, guid: d171000e698007945a53338d2a53af23, type: 2}
+  - {fileID: 1295264237916840, guid: b63b4404f630c4849a765599e62032af, type: 2}
   amountOpenedElements: 0
   explosion: {fileID: 1969359309284086, guid: 0ca3da6962ae4ef4284d90f90ef860b0, type: 2}
 --- !u!65 &722167198
