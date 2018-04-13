@@ -293,6 +293,7 @@
     <Compile Include="Assets\Scripts\ElementAnimation.cs" />
     <Compile Include="Assets\Scripts\ElementMovement.cs" />
     <Compile Include="Assets\Scripts\ElementsPanel.cs" />
+    <Compile Include="Assets\Scripts\EventAgrigator.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\StarAnimation.cs" />
     <Compile Include="Assets\Scripts\StarLight.cs" />
