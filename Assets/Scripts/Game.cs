@@ -27,7 +27,7 @@ public class Game : MonoBehaviour {
         if (explosionFlag == false)
         {
             Vector3 pos = new Vector3(0, 0, this.gameObject.transform.position.z+0.5f);
-            Instantiate(explosion, pos, Quaternion.identity);
+            //Instantiate(explosion, pos, Quaternion.identity);
             pos.z -= 1f;
             Instantiate(elements[0],pos,Quaternion.identity);
             addUI();
